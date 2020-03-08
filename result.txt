@@ -1,0 +1,46 @@
+Workshop:	401	shop 401
+Workshop:	402	shop 402
+Workshop:	403	shop 403
+Product: 501	product 501
+	Process:	201	bending	Workshop:	401	shop 401
+	Process:	203	cutting	Workshop:	403	shop 403
+	RawMaterial:	301	r1	kg X 4.0
+	RawMaterial:	302	r2	m X 1.1
+Process:	201	bending
+Process:	202	welding
+Process:	203	cutting
+Process:	204	painting
+Process:	205	mounting
+RawMaterial:	301	r1	kg
+Customer:	701	c701
+RawMaterial:	302	r2	m
+---------
+WorkOrder: 1001	wo1001 product: 501	product 501 x 3 state: -1 open
+---------
+301	r1 x 100.0
+302	r2 x 20.0
+Workshop:	401	shop 401
+Workshop:	402	shop 402
+Workshop:	403	shop 403
+Product: 501	product 501
+	Process:	201	bending	Workshop:	401	shop 401
+	Process:	203	cutting	Workshop:	403	shop 403
+	RawMaterial:	301	r1	kg X 4.0
+	RawMaterial:	302	r2	m X 1.1
+Process:	201	bending
+Process:	202	welding
+Process:	203	cutting
+Process:	204	painting
+Process:	205	mounting
+RawMaterial:	301	r1	kg
+Customer:	701	c701
+RawMaterial:	302	r2	m
+---------
+Sale: 801	 customer: 501	product 501 x 1
+WorkOrder: 1001	wo1001 product: 501	product 501 x 3 state: 3 closed
+---------
+501	product 501 x 2.0
+301	r1 x 68.0
+302	r2 x 16.7
+
+Process finished with exit code 0
